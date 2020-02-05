@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Nunito-SemiBold';
+  src: local('Nunito-SemiBold'), url(./fonts/Nunito-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TitilliumWeb-SemiBold';
+  src: local('TitilliumWeb-SemiBold'), url(./fonts/TitilliumWeb-SemiBold.ttf) format('truetype');
+}
+
+body {
+  background: #eee;
+  font-family: "TitilliumWeb-SemiBold";
+}
