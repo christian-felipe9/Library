@@ -5,7 +5,7 @@ import { graphql } from "react-apollo";
 const getBooksQuery = gql`
   {
     books {
-      id
+      id,
       name
     }
   }
