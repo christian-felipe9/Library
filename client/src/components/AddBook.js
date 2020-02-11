@@ -25,7 +25,7 @@ class AddBook extends Component {
     };
   }
 
-  displayAuthors() {
+  displayAuthors = () => {
     var data = this.props.getAuthorsQuery;
     if (data.loading) {
       return <MenuItem>Loading Authirs...</MenuItem>;
@@ -40,19 +40,19 @@ class AddBook extends Component {
     }
   }
 
-  handleChangeAuthor(event) {
+  handleChangeAuthor = (event) => {
     this.setState({ authorId: event.target.value });
   }
 
-  handleChangeBook(event) {
+  handleChangeBook = (event) => {
     this.setState({ name: event.target.value });
   }
 
-  handleChangeGenre(event) {
+  handleChangeGenre = (event) => {
     this.setState({ genre: event.target.value });
   }
 
-  submitForm(event) {
+  submitForm = (event) => {
     event.preventDefault();
     this.props.addBookMutation({
       variables:{

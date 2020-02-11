@@ -15,11 +15,11 @@ class BookList extends Component {
     };
   }
 
-  handleClickButton(id){
+  handleClickButton = (id) => {
     this.setState({ selected: id });
   }
 
-  displayBooks() {
+  displayBooks = () => {
     var data = this.props.data;
     if (data.loading) {
       return <div>Loading Books...</div>;
